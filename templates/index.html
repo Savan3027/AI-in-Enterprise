@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fish Market Prediction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fish Market Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="Weight">Weight:</label>
+            <input type="text" id="Weight" name="Weight"><br><br>
+            <label for="length1">Length1:</label>
+            <input type="text" id="length1" name="length1"><br><br>
+            <label for="length2">Length2:</label>
+            <input type="text" id="length2" name="length2"><br><br>
+            <label for="length3">Length3:</label>
+            <input type="text" id="length3" name="length3"><br><br>
+            <label for="height">Height:</label>
+            <input type="text" id="Height" name="Height"><br><br>
+            <label for="width">Width:</label>
+            <input type="text" id="Width" name="Width"><br><br>
+            <input type="submit" value="Predict">
+        </form>
+        <h2>{{ prediction_text }}</h2>
+    </div>
+</body>
+</html>
+
